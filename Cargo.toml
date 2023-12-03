@@ -1,0 +1,21 @@
+[package]
+name = "power_bi_updater"
+version = "0.1.0"
+edition = "2021"
+categories = ["authentication", "azure", "active-directory"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.108"
+tokio = { version = "1", features = ["full"] }
+chrono = "0.4.31"
+colored = "2.0.4"
+clap = { version = "4.4.10", features = ["derive"] }
+dialoguer = { version = "0.11.0", features = ["fuzzy-select", "completion"] }
+open = "5.0.1"
+figlet-rs = "0.1.5"
+config = "0.13.4"
